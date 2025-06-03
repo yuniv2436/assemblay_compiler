@@ -1,0 +1,19 @@
+# Ignore object files
+*.o
+
+# Ignore binary executable files
+assembler
+
+# Ignore generated output files
+*.object
+*.ent
+*.ext
+*.am
+*.as
+
+# Ignore editor backups / swap files
+*~
+*.swp
+
+# Ignore macOS files
+.DS_Store
