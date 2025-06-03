@@ -29,6 +29,17 @@ This project implements a **two-pass compiler** that translates simplified assem
 ✅ **Memory-Safe Implementation**  
 - Uses explicit memory allocation (`malloc`, `free`) with consistent cleanup to avoid memory leaks.
 
+✅ **Advanced Error Handling**  
+A standout feature of this assembler is its **robust, user-friendly error reporting system**. The compiler detects and reports a wide range of syntax and semantic errors during both passes, including:
+- Invalid or duplicate label names  
+- Misplaced commas or extraneous text  
+- Instruction word mismatches  
+- Operand count and format errors  
+- String and data declaration issues  
+- Label length and character restrictions  
+
+Each error is accompanied by the exact line number and a detailed message, ensuring clarity for debugging and correctness in the compiled binary output.
+
 ---
 
 ## 📂 Project Structure
