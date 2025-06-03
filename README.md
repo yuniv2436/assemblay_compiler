@@ -20,15 +20,6 @@ This project implements a **two-pass compiler** that translates simplified assem
 ✅ **Robust Parsing**  
 - Validates instructions, operands, labels, and data declarations with detailed error reporting.
 
-✅ **Custom Output Formats**  
-- Generates:  
-  - `.object` file containing the binary code and data sections.  
-  - `.ext` file listing external symbols and their usage.  
-  - `.ent` file listing entry points for the program.
-
-✅ **Memory-Safe Implementation**  
-- Uses explicit memory allocation (`malloc`, `free`) with consistent cleanup to avoid memory leaks.
-
 ✅ **Advanced Error Handling**  
 A standout feature of this assembler is its **robust, user-friendly error reporting system**. The compiler detects and reports a wide range of syntax and semantic errors during both passes, including:
 - Invalid or duplicate label names  
@@ -39,6 +30,15 @@ A standout feature of this assembler is its **robust, user-friendly error report
 - Label length and character restrictions  
 
 Each error is accompanied by the exact line number and a detailed message, ensuring clarity for debugging and correctness in the compiled binary output.
+
+✅ **Custom Output Formats**  
+- Generates:  
+  - `.object` file containing the binary code and data sections.  
+  - `.ext` file listing external symbols and their usage.  
+  - `.ent` file listing entry points for the program.
+
+✅ **Memory-Safe Implementation**  
+- Uses explicit memory allocation (`malloc`, `free`) with consistent cleanup to avoid memory leaks.
 
 ---
 
